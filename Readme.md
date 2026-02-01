@@ -7,50 +7,7 @@ Here is the consolidated, formatted **README.md** file containing all the data y
 
 A **Streamlit-based Movie Recommendation System** that recommends the **top 5 similar movies** based on user selection and displays **movie posters using the TMDB API**.
 
----
-
-## 🚀 Live Application
-🔗 Live App: [Movie Champ](https://movie-champ-ecwm3auxjtsj58dmqxix4p.streamlit.app/)
-
-
----
-
-## ✨ Features
-* **Content-based movie recommendation**: Uses similarity scores to find relevant films.
-* **Visual Suggestions**: Displays the top 5 similar movie suggestions with posters.
-* **Real-time Posters**: Fetches high-quality posters directly via the TMDB API.
-* **Fast UI**: Built with Streamlit for a smooth and interactive user experience.
-* **Secure API Handling**: Uses environment variables for API token security.
-* **Cloud Ready**: Configured for easy deployment on platforms like Streamlit Cloud or Heroku.
-
----
-
-## 🛠️ Tech Stack
-* **Language**: Python
-* **Web Framework**: Streamlit
-* **Data Analysis**: Pandas
-* **Machine Learning**: Scikit-learn
-* **API**: TMDB (The Movie Database)
-* **Serialization**: Pickle
-
----
-
-## 📁 Project Structure
-```text
-movie-recommender/
-│
-├── app.py              # Main Streamlit application script
-├── movies_dict.pkl     # Processed movie data dictionary
-├── similarity.pkl      # Pre-computed similarity matrix
-├── requirements.txt    # List of Python dependencies
-├── setup.sh            # Configuration script for deployment
-├── Procfile            # Process file for Heroku/Cloud deployment
-├── .gitignore          # Files to be excluded from version control
-└── README.md           # Project documentation
-
 ```
-
----
 
 ## ⚙️ Run the Project Locally
 
@@ -110,20 +67,20 @@ It recommends similar movies based on user selection using cosine similarity.
 
 ---
 
-## 📂 Project Structure
-
-movie-champ/
+## 📁 Project Structure
+```text
+movie-recommender/
 │
-├── app.py
-├── requirements.txt
-├── README.md
-├── .gitignore
-├── movies_dict.pkl # (NOT pushed to GitHub)
-├── similarity.pkl # (NOT pushed to GitHub)
-└── .env # (Local only)
+├── app.py              # Main Streamlit application script
+├── movies_dict.pkl     # Processed movie data dictionary
+├── similarity.pkl      # Pre-computed similarity matrix
+├── requirements.txt    # List of Python dependencies
+├── setup.sh            # Configuration script for deployment
+├── Procfile            # Process file for Heroku/Cloud deployment
+├── .gitignore          # Files to be excluded from version control
+└── README.md           # Project documentation
 
-
----
+```
 
 ## ⚙️ Local Setup (Run on Your System)
 
