@@ -2,8 +2,6 @@ import streamlit as st
 import pickle
 import pandas as pd
 import requests
-from dotenv import load_dotenv
-load_dotenv()
 import os
 TMDB_BEARER_TOKEN = os.getenv("TMDB_BEARER_TOKEN")
 
