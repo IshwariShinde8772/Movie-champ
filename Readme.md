@@ -1,11 +1,33 @@
-Here is the consolidated, formatted **README.md** file containing all the data you provided.
+# 🎬 Movie Champ – Movie Recommendation System
+
+Movie Champ is a content-based movie recommendation web application built using **Python** and **Streamlit**.  
+It recommends similar movies based on user selection using cosine similarity.
+
+---
+## 🛠 Tech Stack
+
+- Python 3.10+
+- Streamlit
+- Pandas
+- NumPy
+- Scikit-learn
+- Pickle
+- python-dotenv
 
 ---
 
-```markdown
-# 🎬 Movie Recommendation System
-
-A **Streamlit-based Movie Recommendation System** that recommends the **top 5 similar movies** based on user selection and displays **movie posters using the TMDB API**.
+## 📁 Project Structure
+```text
+movie-recommender/
+│
+├── app.py              # Main Streamlit application script
+├── movies_dict.pkl     # Processed movie data dictionary
+├── similarity.pkl      # Pre-computed similarity matrix
+├── requirements.txt    # List of Python dependencies
+├── setup.sh            # Configuration script for deployment
+├── Procfile            # Process file for Heroku/Cloud deployment
+├── .gitignore          # Files to be excluded from version control
+└── README.md           # Project documentation
 
 ```
 
@@ -43,78 +65,8 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 ```
-# 🎬 Movie Champ – Movie Recommendation System
 
-Movie Champ is a content-based movie recommendation web application built using **Python** and **Streamlit**.  
-It recommends similar movies based on user selection using cosine similarity.
 
----
-
-## 🚀 Live Demo
-👉 https://movie-champ-dbwheczuwcpnfluamtzyxo.streamlit.app/
-
----
-
-## 🛠 Tech Stack
-
-- Python 3.10+
-- Streamlit
-- Pandas
-- NumPy
-- Scikit-learn
-- Pickle
-- python-dotenv
-
----
-
-## 📁 Project Structure
-```text
-movie-recommender/
-│
-├── app.py              # Main Streamlit application script
-├── movies_dict.pkl     # Processed movie data dictionary
-├── similarity.pkl      # Pre-computed similarity matrix
-├── requirements.txt    # List of Python dependencies
-├── setup.sh            # Configuration script for deployment
-├── Procfile            # Process file for Heroku/Cloud deployment
-├── .gitignore          # Files to be excluded from version control
-└── README.md           # Project documentation
-
-```
-
-## ⚙️ Local Setup (Run on Your System)
-
-### 1️⃣ Clone Repository
-```bash
-git clone https://github.com/IshwariShinde8772/Movie-champ.git
-cd Movie-champ
-2️⃣ Create Virtual Environment
-python -m venv .venv
-Activate it:
-
-Windows
-
-.venv\Scripts\activate
-Mac / Linux
-
-source .venv/bin/activate
-3️⃣ Install Dependencies
-pip install -r requirements.txt
-4️⃣ Environment Variables (Token Setup)
-Create a .env file:
-
-API_TOKEN=your_api_token_here
-In app.py:
-
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
-API_TOKEN = os.getenv("API_TOKEN")
-5️⃣ Run the App
-streamlit run app.py
-
----
 
 ## 🔐 TMDB API Token Setup (IMPORTANT)
 
@@ -132,7 +84,7 @@ You must set your token in your environment for the app to function.
 **Windows (Command Prompt):**
 
 ```cmd
-setx TMDB_TOKEN "your_tmdb_bearer_token"
+setx TMDB_BEARER_TOKEN "your_tmdb_bearer_token"
 
 ```
 
@@ -141,7 +93,7 @@ setx TMDB_TOKEN "your_tmdb_bearer_token"
 **PowerShell:**
 
 ```powershell
-$env:TMDB_TOKEN="your_tmdb_bearer_token"
+$env:TMDB_BEARER_TOKEN="your_tmdb_bearer_token"
 
 ```
 
@@ -164,10 +116,9 @@ TMDB_TOKEN=your_tmdb_bearer_token
 Then, install `python-dotenv` and add these lines to the top of your `app.py`:
 
 ```python
-from dotenv import load_dotenv
+
 import os
-load_dotenv()
-tmdb_token = os.getenv("TMDB_TOKEN")
+tmdb_token = os.getenv("TMDB_BEARER_TOKEN")
 
 ```
 
@@ -186,6 +137,14 @@ The app will be available at: **http://localhost:8501**
 
 ```
 
-Would you like me to help you write the `requirements.txt` file or the `app.py` logic to handle that TMDB token?
 
-```
+
+## 🚀 Live Demo
+👉 https://movie-champ-dbwheczuwcpnfluamtzyxo.streamlit.app/
+
+---
+
+
+
+
+
