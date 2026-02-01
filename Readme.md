@@ -10,7 +10,7 @@ A **Streamlit-based Movie Recommendation System** that recommends the **top 5 si
 ---
 
 ## 🚀 Live Application
-👉 [Insert your Streamlit Cloud deployment link here]
+👉 https://movie-champ-ecwm3auxjtsj58dmqxix4p.streamlit.app/
 
 ---
 
