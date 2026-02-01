@@ -85,6 +85,76 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 ```
+# 🎬 Movie Champ – Movie Recommendation System
+
+Movie Champ is a content-based movie recommendation web application built using **Python** and **Streamlit**.  
+It recommends similar movies based on user selection using cosine similarity.
+
+---
+
+## 🚀 Live Demo
+👉 https://movie-champ-dbwheczuwcpnfluamtzyxo.streamlit.app/
+
+---
+
+## 🛠 Tech Stack
+
+- Python 3.10+
+- Streamlit
+- Pandas
+- NumPy
+- Scikit-learn
+- Pickle
+- python-dotenv
+
+---
+
+## 📂 Project Structure
+
+movie-champ/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── .gitignore
+├── movies_dict.pkl # (NOT pushed to GitHub)
+├── similarity.pkl # (NOT pushed to GitHub)
+└── .env # (Local only)
+
+
+---
+
+## ⚙️ Local Setup (Run on Your System)
+
+### 1️⃣ Clone Repository
+```bash
+git clone https://github.com/IshwariShinde8772/Movie-champ.git
+cd Movie-champ
+2️⃣ Create Virtual Environment
+python -m venv .venv
+Activate it:
+
+Windows
+
+.venv\Scripts\activate
+Mac / Linux
+
+source .venv/bin/activate
+3️⃣ Install Dependencies
+pip install -r requirements.txt
+4️⃣ Environment Variables (Token Setup)
+Create a .env file:
+
+API_TOKEN=your_api_token_here
+In app.py:
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+API_TOKEN = os.getenv("API_TOKEN")
+5️⃣ Run the App
+streamlit run app.py
 
 ---
 
