@@ -140,7 +140,7 @@ The app will be available at: **http://localhost:8501**
 
 
 ## 🚀 Live Demo
-👉 https://movie-champ-dbwheczuwcpnfluamtzyxo.streamlit.app/
+👉 [https://movie-champ-dbwheczuwcpnfluamtzyxo.streamlit.app/](https://movie-champ-ecwm3auxjtsj58dmqxix4p.streamlit.app/)
 
 
 
